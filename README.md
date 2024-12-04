@@ -1,0 +1,1 @@
+This repository demonstrates an uncommon error in assembly code that can lead to buffer overflow vulnerabilities.  The specific issue involves a lack of bounds checking in the memory access using the `mov eax, [ebx+ecx*4]` instruction.  The solution involves adding validation to ensure `ecx` doesn't exceed safe limits.
